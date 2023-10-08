@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `どうもこんにちは、あんどれです`,
+    title: `あんどれ日記`,
     author: {
-      name: `あんどれ`,
-      summary: `あんどれの日記`,
+      name: ``,
+      summary: ``,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `andre_synonimos`,
     },
   },
   plugins: [
@@ -118,8 +118,22 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: "./src/images/unko.jpg" // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        enablelistener: true,
+        preconnect: ["https://fonts.googleapis.com"],
+        web: [
+          {
+            name: "Kaisei Opti",
+            file: "https://fonts.googleapis.com/css2?family=Kaisei+Opti"
+
+          }
+        ]
+      }
     },
   ],
 }

@@ -3,10 +3,14 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
+import * as React from "react"
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents ([
+    <link
+      key="local-font"
+      rel="stylesheet"
+      href="/fonts/hannari.otf"
+    />
+  ])
 }
