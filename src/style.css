@@ -30,7 +30,7 @@
   --fontFamily-sans: "MontserratVariable", system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+    "Noto Color Emoji", "Noto Serif JP";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
@@ -253,6 +253,7 @@ a:focus {
 }
 
 .main-heading {
+  font-family: "Noto Serif JP";
   font-size: var(--fontSize-7);
   margin: 0;
 }
