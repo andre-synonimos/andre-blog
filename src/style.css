@@ -321,6 +321,94 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+.chat-room {
+  width: 100%;
+  border: 3px dotted #d2fdf9;
+}
+
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-left: 20px;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+.my-field {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+
+.my-comment {
+  display: inline-block;
+  color: #505050;
+  background-color: #dbf8f2;
+  position: relative;
+  border-radius: 12px;
+  padding: 17px 13px;
+  margin: 5px 50px 0 0;
+}
+
+.my-comment:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: -24px;
+  border: 12px solid transparent;
+  border-left: 12px solid #dbf8f2;
+}
+
+.my-comment p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 /* Media queries */
 
 @media (max-width: 42rem) {
